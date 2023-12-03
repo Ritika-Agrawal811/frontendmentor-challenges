@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links 🔗
 
-- Visit : [Solution URL](https://your-solution-url.com)
+- Visit : [Solution URL](https://www.frontendmentor.io/solutions/responsive-product-preview-card-component-RqgUQ-SCoa)
 - Visit : [Live Site URL](https://frontendmentor-challenges-iota.vercel.app/product-preview-card-component-main/index.html)
 
 ## 🔄 My process
