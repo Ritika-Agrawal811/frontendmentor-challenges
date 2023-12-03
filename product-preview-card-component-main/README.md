@@ -30,7 +30,7 @@ Users should be able to:
 ### Links 🔗
 
 - Visit : [Solution URL](https://your-solution-url.com)
-- Visit : [Live Site URL](https://your-live-site-url.com)
+- Visit : [Live Site URL](https://frontendmentor-challenges-iota.vercel.app/product-preview-card-component-main/index.html)
 
 ## 🔄 My process
 
