@@ -84,6 +84,35 @@ body {
   width: 1em;
 }
 
+.profile__footer {
+  padding: 1em;
+  color: #fff;
+  background-color: #121645;
+  font-family: sans-serif;
+}
+
+.profile__footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  padding-bottom: 1em;
+}
+
+.profile__footer ul li i {
+  margin-right: 0.5em;
+}
+
+.profile__footer p {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-top: 1em;
+  line-height: 1.5;
+}
+
 @media (min-width: 640px) {
   main {
     display: flex;
@@ -110,5 +139,18 @@ body {
   .card_title,
   .card__price {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .profile__footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .profile__footer ul {
+    gap: 3em;
+    font-size: 1.05rem;
   }
 }
