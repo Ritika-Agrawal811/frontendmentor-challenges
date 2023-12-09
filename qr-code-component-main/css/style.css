@@ -1,0 +1,185 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* specific styling */
+
+body[theme="dark"] {
+  --primary: #121212;
+  --card-background: #1e1e1e;
+  --text-color: rgba(255, 255, 255, 0.8);
+  --heading-color: hsl(218, 44%, 65%);
+  --box-shadow-color: transparent;
+
+  /* footer colors */
+  --footer-background: #040d12;
+  --footer-text-color: #bababa;
+  --footer-text-color-light: #bababa;
+
+  /* toggle button */
+  --toggle-accent: rgba(255, 255, 255, 0.8);
+  --toggle-priary: #121645;
+}
+
+body[theme="light"] {
+  --primary: #d5e1ef;
+  --card-background: #fff;
+  --text-color: hsl(220, 15%, 55%);
+  --heading-color: hsl(218, 44%, 22%);
+  --box-shadow-color: #ccd6e2;
+
+  /* footer colors */
+  --footer-background: #121645;
+  --footer-text-color: #fff;
+  --footer-text-color-light: rgba(255, 255, 255, 0.8);
+
+  /* toggle button */
+  --toggle-accent: #121645;
+  --toggle-priary: transparent;
+}
+
+body {
+  background-color: var(--primary);
+  transition: all 50ms ease-in-out;
+}
+
+/* toggle button */
+
+.toggle__button {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 4.5em;
+  height: 2.5em;
+  border-radius: 100vmax;
+  border: 3px solid var(--toggle-accent);
+  background-color: var(--toggle-priary);
+  cursor: pointer;
+}
+
+.toggle__button input {
+  transform: translateY(-50%);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  width: 1.75em;
+  height: 1.75em;
+  border-radius: 50%;
+  background-color: var(--toggle-accent);
+  pointer-events: none;
+  transition: left 150ms ease-in;
+}
+
+.toggle__button input:checked {
+  left: calc(100% - 1.75em - 4px);
+}
+
+/* challenge */
+
+.card {
+  margin: 5em auto 2em auto;
+  padding: 1em;
+  border-radius: 1em;
+  width: min(90%, 300px);
+  color: var(--text-color);
+  background-color: var(--card-background);
+  font-family: "Outfit", sans-serif;
+  box-shadow: 0 1em 2em 1em var(--box-shadow-color);
+}
+
+.card__image img {
+  border-radius: 0.75em;
+}
+
+.card__title {
+  font-size: 1.25rem;
+  color: var(--heading-color);
+  text-align: center;
+  margin: 1em 0;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.card__description {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.25;
+  margin-bottom: 1em;
+}
+
+.profile__footer {
+  padding: 1em;
+  color: var(--footer-text-color);
+  background-color: var(--footer-background);
+  font-family: sans-serif;
+}
+
+.profile__footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  font-size: 1rem;
+  border-bottom: 1px solid var(--footer-text-color-light);
+  padding-bottom: 1em;
+}
+
+.profile__footer ul li i {
+  margin-right: 0.5em;
+}
+
+.profile__footer p {
+  color: var(--footer-text-color-light);
+  text-align: center;
+  margin-top: 1em;
+  line-height: 1.5;
+}
+
+@media (min-width: 640px) {
+  main {
+    display: flex;
+    height: 100vh;
+  }
+
+  .card {
+    grid-template: auto / repeat(2, 1fr);
+    margin: auto;
+  }
+
+  .card__title {
+    font-size: 1.35rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .toggle__button {
+    position: fixed;
+    width: 5em;
+    height: 2.85em;
+    right: 2em;
+    top: 2em;
+  }
+
+  .toggle__button input {
+    width: 2em;
+    height: 2em;
+  }
+
+  .toggle__button input:checked {
+    left: calc(100% - 2em - 4px);
+  }
+
+  .profile__footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .profile__footer ul {
+    gap: 3em;
+    font-size: 1.05rem;
+  }
+}
