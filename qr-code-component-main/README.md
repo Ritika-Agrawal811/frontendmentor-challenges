@@ -36,7 +36,7 @@ I've added below features to this challenge:
 ### Links 🔗
 
 - Visit : [Solution URL](https://www.frontendmentor.io/solutions/responsive-product-preview-card-component-RqgUQ-SCoa)
-- Visit : [Live Site URL](https://frontendmentor-challenges-iota.vercel.app/product-preview-card-component-main/index.html)
+- Visit : [Live Site URL](https://frontendmentor-challenges-iota.vercel.app/qr-code-component-main/index.html)
 
 ## 🔄 My process
 
