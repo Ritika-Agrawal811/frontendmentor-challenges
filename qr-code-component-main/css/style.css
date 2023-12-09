@@ -3,6 +3,10 @@
 
 /* specific styling */
 
+html {
+  font-size: 16px;
+}
+
 body[theme="dark"] {
   --primary: #121212;
   --card-background: #1e1e1e;
