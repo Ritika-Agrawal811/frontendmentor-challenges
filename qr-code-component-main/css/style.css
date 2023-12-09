@@ -143,16 +143,6 @@ body {
 }
 
 @media (min-width: 640px) {
-  main {
-    display: flex;
-    height: 100vh;
-  }
-
-  .card {
-    grid-template: auto / repeat(2, 1fr);
-    margin: auto;
-  }
-
   .card__title {
     font-size: 1.35rem;
   }
