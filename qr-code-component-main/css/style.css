@@ -3,10 +3,6 @@
 
 /* specific styling */
 
-html {
-  font-size: 16px;
-}
-
 body[theme="dark"] {
   --primary: #121212;
   --card-background: #1e1e1e;
@@ -142,13 +138,13 @@ body {
   line-height: 1.5;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40em) {
   .card__title {
     font-size: 1.35rem;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 90em) {
   .toggle__button {
     position: fixed;
     width: 5em;
