@@ -7,15 +7,21 @@ window.onload = () => {
   if (theme) {
     document.body.setAttribute("theme", theme);
 
-    if (theme === "dark") themeToggle.querySelector("input").checked = true;
+    if (theme === "dark") themeToggle.setAttribute("aria-pressed", true);
   }
 };
 
 // set dark/light mode on toggle
 themeToggle.addEventListener("click", (e) => {
+  const isDarkMode = themeToggle.getAttribute("aria-pressed");
+  themeToggle.setAttribute(
+    "aria-pressed",
+    `${isDarkMode === "false" ? "true" : "false"}`
+  );
+
   let theme;
 
-  if (e.target.checked) {
+  if (isDarkMode === "false") {
     theme = "dark";
   } else {
     theme = "light";

@@ -14,10 +14,6 @@ body[theme="dark"] {
   --footer-background: #040d12;
   --footer-text-color: #bababa;
   --footer-text-color-light: #bababa;
-
-  /* toggle button */
-  --toggle-accent: rgba(255, 255, 255, 0.8);
-  --toggle-priary: #121645;
 }
 
 body[theme="light"] {
@@ -31,55 +27,53 @@ body[theme="light"] {
   --footer-background: #121645;
   --footer-text-color: #fff;
   --footer-text-color-light: rgba(255, 255, 255, 0.8);
-
-  /* toggle button */
-  --toggle-accent: #121645;
-  --toggle-priary: transparent;
 }
 
 body {
   background-color: var(--primary);
+  overflow-x: hidden;
   transition: all 50ms ease-in-out;
 }
 
 /* toggle button */
 
-.toggle__button {
-  position: absolute;
-  right: 1em;
-  top: 1em;
-  width: 4.5em;
-  height: 2.5em;
-  border-radius: 100vmax;
-  border: 3px solid var(--toggle-accent);
-  background-color: var(--toggle-priary);
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5em 1em;
+}
+
+#themeToggle {
+  position: relative;
   cursor: pointer;
-}
-
-.toggle__button input {
-  transform: translateY(-50%);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-  left: 4px;
-  top: 50%;
-  width: 1.75em;
-  height: 1.75em;
+  color: transparent;
+  width: 3em;
+  height: 3em;
   border-radius: 50%;
-  background-color: var(--toggle-accent);
-  pointer-events: none;
-  transition: left 150ms ease-in;
 }
 
-.toggle__button input:checked {
-  left: calc(100% - 1.75em - 4px);
+.icon {
+  position: absolute;
+  color: var(--heading-color);
+  font-size: 2rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+#themeToggle[aria-pressed="false"] .fa-sun {
+  display: none;
+}
+
+#themeToggle[aria-pressed="true"] .fa-moon {
+  display: none;
 }
 
 /* challenge */
 
 .card {
-  margin: 5em auto 2em auto;
+  margin: 1em auto;
   padding: 1em;
   border-radius: 1em;
   width: min(90%, 300px);
@@ -145,23 +139,6 @@ body {
 }
 
 @media (min-width: 90em) {
-  .toggle__button {
-    position: fixed;
-    width: 5em;
-    height: 2.85em;
-    right: 2em;
-    top: 2em;
-  }
-
-  .toggle__button input {
-    width: 2em;
-    height: 2em;
-  }
-
-  .toggle__button input:checked {
-    left: calc(100% - 2em - 4px);
-  }
-
   .profile__footer {
     width: 100%;
     position: fixed;
