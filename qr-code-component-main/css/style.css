@@ -43,10 +43,13 @@ header {
   padding: 0.5em 1em;
 }
 
+#btn-label {
+  display: none;
+}
+
 #themeToggle {
   position: relative;
   cursor: pointer;
-  color: transparent;
   width: 3em;
   height: 3em;
   border-radius: 50%;
