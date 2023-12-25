@@ -11,158 +11,99 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body class="bg-gray-900">
-    <main class="border-2 border-red-900 xxl:min-h-screen flex">
-      <article
-        class="bg-gray-500 xxl:m-auto font-overpass w-11/12 sm:w-[400px] rounded-3xl p-8"
-      >
-        <figure class="rounded-full bg-gray-400 w-fit p-4 mb-5">
-          <img src="./images/icon-star.svg" alt="" class="w-5 h-5" />
+    <main class="lg:min-h-screen lg:flex lg:justify-center lg:items-center">
+      <article class="bg-gray-500 m-auto font-overpass w-11/12 xs:w-[300px] sm:w-[350px] lg:w-[380px] rounded-3xl p-4 xs:p-5 lg:p-8 my-10 lg:my-0">
+        <section>
+        <figure class="rounded-full bg-gray-400 w-fit p-3 sm:p-4 mb-5">
+          <img src="./images/icon-star.svg" alt="" class="w-4 h-4 sm:w-5 s:h-5" />
         </figure>
         <h3 class="text-white text-2xl">How did we do?</h3>
-        <p class="text-gray-100 my-4 text-sm">
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
-        <form>
+        <p class="text-gray-100 my-4 text-sm">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <form id="feedback-form">
           <fieldset class="my-6">
-            <div class="flex justify-between">
-              <label
-                for="rating1"
-                class="w-12 h-12 rounded-full text-gray-100 flex justify-center items-center text-xl cursor-pointer relative z-10 hover:text-white"
-              >
-                <input
-                  type="radio"
-                  name="rating"
-                  value="1"
-                  id="rating1"
-                  class="rounded-full appearance-none absolute w-full h-full bg-gray-400 -z-10 checked:bg-accent cursor-pointer hover:bg-gray-100 checked:hover:bg-accent peer"
-                />
-                <span class="peer-checked:text-white pointer-events-none"
-                  >1</span
-                >
+            <div class="flex justify-between text-sm sm:text-base">
+              <label for="rating1" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full text-gray-100 flex justify-center items-center text-lg cursor-pointer relative z-10 hover:text-white">
+                <input type="radio" name="rating" value="1" id="rating1" class="rounded-full appearance-none absolute w-full h-full bg-gray-400 -z-10 checked:bg-accent cursor-pointer hover:bg-gray-100 checked:hover:bg-accent peer transition-colors " />
+                <span class="absolute left-9999">Rating</span>
+                <span class="peer-checked:text-white pointer-events-none">1</span>
               </label>
-              <label
-                for="rating2"
-                class="w-12 h-12 rounded-full text-gray-100 flex justify-center items-center text-xl cursor-pointer relative z-10 hover:text-white"
-              >
-                <input
-                  type="radio"
-                  name="rating"
-                  value="2"
-                  id="rating2"
-                  class="rounded-full appearance-none absolute w-full h-full bg-gray-400 -z-10 checked:bg-accent cursor-pointer hover:bg-gray-100 checked:hover:bg-accent peer"
-                />
-                <span class="peer-checked:text-white">2</span>
+
+              <label for="rating2" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full text-gray-100 flex justify-center items-center text-lg cursor-pointer relative z-10 hover:text-white">
+                <input type="radio" name="rating" value="2" id="rating2" class="rounded-full appearance-none absolute w-full h-full bg-gray-400 -z-10 checked:bg-accent cursor-pointer hover:bg-gray-100 checked:hover:bg-accent peer transition-colors " />
+                <span class="absolute left-9999">Rating</span>
+                <span class="peer-checked:text-white pointer-events-none">2</span>
               </label>
-              <label
-                for="rating3"
-                class="w-12 h-12 rounded-full text-gray-100 flex justify-center items-center text-xl cursor-pointer relative z-10 hover:text-white"
-              >
-                <input
-                  type="radio"
-                  name="rating"
-                  value="3"
-                  id="rating3"
-                  class="rounded-full appearance-none absolute w-full h-full bg-gray-400 -z-10 checked:bg-accent cursor-pointer hover:bg-gray-100 checked:hover:bg-accent peer"
-                />
-                <span class="peer-checked:text-white">3</span>
+
+              <label for="rating3" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full text-gray-100 flex justify-center items-center text-lg cursor-pointer relative z-10 hover:text-white">
+                <input type="radio" name="rating" value="3" id="rating3" class="rounded-full appearance-none absolute w-full h-full bg-gray-400 -z-10 checked:bg-accent cursor-pointer hover:bg-gray-100 checked:hover:bg-accent peer transition-colors " />
+                <span class="absolute left-9999">Rating</span>
+                <span class="peer-checked:text-white pointer-events-none">3</span>
               </label>
-              <label
-                for="rating4"
-                class="w-12 h-12 rounded-full text-gray-100 flex justify-center items-center text-xl cursor-pointer relative z-10 hover:text-white"
-              >
-                <input
-                  type="radio"
-                  name="rating"
-                  value="4"
-                  id="rating4"
-                  class="rounded-full appearance-none absolute w-full h-full bg-gray-400 -z-10 checked:bg-accent cursor-pointer hover:bg-gray-100 checked:hover:bg-accent peer"
-                />
-                <span class="peer-checked:text-white">4</span>
+
+              <label for="rating4" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full text-gray-100 flex justify-center items-center text-lg cursor-pointer relative z-10 hover:text-white">
+                <input type="radio" name="rating" value="4" id="rating4" class="rounded-full appearance-none absolute w-full h-full bg-gray-400 -z-10 checked:bg-accent cursor-pointer hover:bg-gray-100 checked:hover:bg-accent peer transition-colors " />
+                <span class="absolute left-9999">Rating</span>
+                <span class="peer-checked:text-white pointer-events-none">4</span>
               </label>
-              <label
-                for="rating5"
-                class="w-12 h-12 rounded-full text-gray-100 flex justify-center items-center text-xl cursor-pointer relative z-10 hover:text-white"
-              >
-                <input
-                  type="radio"
-                  name="rating"
-                  value="5"
-                  id="rating5"
-                  class="rounded-full appearance-none absolute w-full h-full bg-gray-400 -z-10 checked:bg-accent cursor-pointer hover:bg-gray-100 checked:hover:bg-accent peer"
-                />
-                <span class="peer-checked:text-white">5</span>
+
+              <label for="rating5" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full text-gray-100 flex justify-center items-center text-lg cursor-pointer relative z-10 hover:text-white">
+                <input type="radio" name="rating" value="5" id="rating5" class="rounded-full appearance-none absolute w-full h-full bg-gray-400 -z-10 checked:bg-accent cursor-pointer hover:bg-gray-100 checked:hover:bg-accent peer transition-colors " />
+                <span class="absolute left-9999">Rating</span>
+                <span class="peer-checked:text-white pointer-events-none">5</span>
               </label>
             </div>
           </fieldset>
-          <button
-            class="rounded-full bg-accent w-full text-white uppercase p-2"
-          >
-            Submit
-          </button>
+          <button class="rounded-full bg-accent w-full text-white uppercase p-2.5 hover:bg-white hover:text-accent transition-colors duration-150 text-sm sm:text-base">Submit</button>
         </form>
+      </section>
+      <section class="flex-col items-center hidden" id="thank-you-message">
+        <figure class="flex justify-center mb-6">
+          <img src="./images/illustration-thank-you.svg" alt="" class="" />
+        </figure>
+
+        <span class="text-accent bg-gray-400 px-4 py-1 rounded-full">You selected <span id="user-rating"></span> out of 5</span>
+
+        <h3 class="text-white text-2xl sm:text-3xl text-center mt-6">Thank you!</h3>
+        <p class="text-gray-100 my-4 text-sm text-center"> We appreciate you taking the time to give a rating. If
+          you ever need more support, don’t hesitate to get in touch!</p>
+
+      </section>
       </article>
     </main>
 
-    <!-- You selected
-   
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch! -->
-
-    <footer
-      class="text-white bg-blue-900 p-4 xxl:fixed xxl:bottom-0 xxl:w-full"
-    >
-      <ul
-        class="flex flex-wrap justify-center items-center gap-6 border-b-2 border-b-white pb-4"
-      >
+    <footer class=" bg-blue-900 p-4 md:fixed md:bottom-0 md:w-full">
+      <ul class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 border-b-2 border-b-white pb-4 text-white text-sm sm:text-base">
         <li>
-          <a href="https://twitter.com/RitikaAgrawal08" target="_blank"
-            ><i class="fa-brands fa-twitter mr-2"></i> Twitter</a
-          >
+          <a href="https://twitter.com/RitikaAgrawal08" target="_blank"><i class="fa-brands fa-twitter mr-2"></i> Twitter</a>
         </li>
         <li>
-          <a href="https://codepen.io/RitikaAgrawal08" target="_blank"
-            ><i class="fa-brands fa-codepen mr-2"></i> CodePen</a
-          >
+          <a href="https://codepen.io/RitikaAgrawal08" target="_blank"><i class="fa-brands fa-codepen mr-2"></i> CodePen</a>
         </li>
         <li>
-          <a href="https://medium.com/@RitikaAgrawal08" target="_blank"
-            ><i class="fa-brands fa-medium mr-2"></i> Medium</a
-          >
+          <a href="https://medium.com/@RitikaAgrawal08" target="_blank"> <i class="fa-brands fa-medium mr-2"></i> Medium </a>
         </li>
         <li>
-          <a href="https://dev.to/ritikaagrawal08" target="_blank"
-            ><i class="fa-brands fa-dev mr-2"></i> Dev.to</a
-          >
+          <a href="https://dev.to/ritikaagrawal08" target="_blank"> <i class="fa-brands fa-dev mr-2"></i> Dev.to </a>
         </li>
         <li>
-          <a href="https://github.com/Ritika-Agrawal811" target="_blank"
-            ><i class="fa-brands fa-github mr-2"></i>GitHub</a
-          >
+          <a href="https://github.com/Ritika-Agrawal811" target="_blank"><i class="fa-brands fa-github mr-2"></i>GitHub</a>
         </li>
         <li>
-          <a href="https://ritikaagrawal08.gumroad.com/" target="_blank"
-            ><i class="fa-solid fa-g mr-2"></i>Gumroad</a
-          >
+          <a href="https://ritikaagrawal08.gumroad.com/" target="_blank"><i class="fa-solid fa-g mr-2"></i>Gumroad</a>
         </li>
       </ul>
-      <p class="text-center mt-4">
+      <p class="text-center mt-4 text-sm text-opacity-80 text-white">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by Ritika Agrawal.
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by Ritika Agrawal.
       </p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

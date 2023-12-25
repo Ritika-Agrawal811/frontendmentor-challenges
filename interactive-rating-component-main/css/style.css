@@ -2,3 +2,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities{
+    .left-9999{
+        left: -9999px;
+    }
+}
