@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links 🔗
 
-- Visit : [Solution URL](https://www.frontendmentor.io/solutions/darklight-theme-qr-code-challenge-WHcxCjlSlb)
+- Visit : [Solution URL](https://www.frontendmentor.io/solutions/interactive-rating-component-with-tailwind-css-53ITR-9vp5)
 - Visit : [Live Site URL](https://frontendmentor-challenges-iota.vercel.app/interactive-rating-component-main/index.html)
 
 ## 🔄 My process
