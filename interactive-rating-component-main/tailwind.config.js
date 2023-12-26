@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ["./**/*.html", "./**/*.js"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./**/*.html", "./**/*.js"],
   theme: {
     extend: {
       colors: {
@@ -27,7 +26,7 @@ module.exports = {
       sm: "40em",
       md: "48em",
       lg: "64em",
-      xxl: "90em",
+      xl: "90em",
     },
   },
   variants: {},
